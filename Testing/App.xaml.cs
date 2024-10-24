@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Windows;
+using Testing.Services;
+using Testing.ViewModels;
 
 namespace Testing
 {
@@ -16,10 +18,11 @@ namespace Testing
 
         public static IServiceProvider Services => Host.Services;
 
-        internal static void ConfigureServices(HostBuilderContext context, IServiceCollection collection)
-        {
-            
-        }
+        internal static void ConfigureServices(HostBuilderContext host, IServiceCollection services) => services
+            .AddServices()
+            .AddViewModels()
+        ;
+        
 
         protected override async void OnStartup(StartupEventArgs e)
         {
