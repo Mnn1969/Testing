@@ -1,7 +1,8 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:l="clr-namespace:Testing.Infrastructure.Commands">
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:l="clr-namespace:Testing.Infrastructure.Commands">
 
-    <l:CloseWindow x:Key="CloseWindowCommand"/>
-    
+    <l:CloseWindow x:Key="CloseWindowCommand" />
+
 </ResourceDictionary>
